@@ -9,11 +9,20 @@
 <body>
     <script>
         function Person(){
- 
+            this.firstName = "";
+            this.lastName = "";
         }
 
         const rachmat = new Person();
+        rachmat.firstName = "Rachmat";
+        rachmat.lastName = "Perdana";
+
         const budi = new Person();
+        budi.firstName = "Budi";
+        budi.lastName = "Nugraha";
+
+        console.log(rachmat);
+        console.log(budi);
     </script>
 </body>
 </html>
