@@ -8,22 +8,18 @@
 </head>
 <body>
     <script>
-        function Person(){
-            this.firstName = "";
-            this.lastName = "";
+        function Person(firstName, lastName){
+            this.firstName = firstName;
+            this.lastName = lastName;
             this.sayHello = function (name){
                 console.log(`Hello ${name}, my name is ${this.firstName}`);
             }
         }
 
-        const rachmat = new Person();
-        rachmat.firstName = "Rachmat";
-        rachmat.lastName = "Perdana";
+        const rachmat = new Person("Rachmat", "Ardico");
         rachmat.sayHello("Joko");
-
-        const budi = new Person();
-        budi.firstName = "Budi";
-        budi.lastName = "Nugraha";
+        
+        const budi = new Person("Budi", "Nugraha");
         budi.sayHello("Joko");
 
         console.log(rachmat);
